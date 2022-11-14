@@ -6,7 +6,7 @@ services:
     ports:
       - "5984:5984"
     volumes:
-      - couchdb-data:/opt/couchdb/data:r
+      - couchdb-data:/opt/couchdb/data
       - couchdb-etc:/opt/couchdb/etc
     restart: unless-stopped
     environment:
